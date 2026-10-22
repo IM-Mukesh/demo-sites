@@ -134,7 +134,7 @@ export function ContactPage({ business }: { business: BusinessConfig }) {
           </div>
           <div className="page-hero__meta">
             <strong>Studio consultation</strong>
-            Baseline ₹10,000 Discovery Session.<br />
+            By Prior Appointment.<br />
             Sector 57, Gurugram.
           </div>
         </div>
@@ -145,7 +145,7 @@ export function ContactPage({ business }: { business: BusinessConfig }) {
           <div className="contact-panel">
             <Eyebrow>Find the right starting point</Eyebrow>
             <h2>Let the brief begin simply.</h2>
-            <p>You can call, open WhatsApp, ask for directions or preview an enquiry using the form. Discovery sessions start with an initial ₹10,000 baseline.</p>
+            <p>You can call, open WhatsApp, ask for directions or preview an enquiry using the form.</p>
             <ContactActions business={business} />
             <ul className="contact-details">
               <li><span>Direct Phone</span><a href="tel:+919466940493">+91 94669 40493</a></li>

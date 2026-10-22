@@ -55,8 +55,7 @@ export function ContactForm() {
 • Project Type: ${values.projectType || "General Architectural Consultation"}
 • Location: ${values.projectLocation || "Sector 57 / Gurugram"}
 • Budget Range: ${values.budget || "To Discuss"}
-• Details: ${values.description || "Looking to discuss spatial planning and design direction."}
-(Baseline ₹10,000 Discovery Session)`;
+• Details: ${values.description || "Looking to discuss spatial planning and design direction."}`;
 
   const whatsappUrl = getWhatsAppUrl(studioPhone, whatsappBriefText);
   const callUrl = getCallUrl(studioPhone);
@@ -66,7 +65,7 @@ export function ContactForm() {
       <div className="concept-strip mb-6 bg-stone-900/40 border border-white/10 p-4 rounded-xl">
         <p className="concept-note text-xs text-stone-300 m-0 leading-relaxed">
           <span>
-            <strong>Sector 57 Studio Consultation:</strong> Initial discovery briefings carry a baseline ₹10,000 allocation. Submit your brief below to preview, or connect instantly with our team via WhatsApp.
+            <strong>Sector 57 Studio Consultation:</strong> Share your project location and spatial brief below to preview your enquiry, or connect directly with our design team via WhatsApp.
           </span>
         </p>
       </div>
@@ -154,7 +153,7 @@ export function ContactForm() {
           <input
             id="budget"
             name="budget"
-            placeholder="e.g. ₹50L - ₹1.5 Cr / To be assessed in discovery"
+            placeholder="A range is helpful, if known"
             value={values.budget}
             onChange={(event) => update("budget", event.target.value)}
           />

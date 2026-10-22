@@ -42,7 +42,7 @@ export function HomePage({ business }: { business: BusinessConfig }) {
                 <Star size={13} className="fill-amber-300" /> 5.0 Star Rating
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-md text-stone-300 text-xs font-medium font-mono">
-                ₹10,000 Discovery Session
+                Bespoke Architectural Studio
               </span>
             </div>
 
@@ -102,8 +102,8 @@ export function HomePage({ business }: { business: BusinessConfig }) {
             </Reveal>
 
             <Reveal delay={0.1} className="space-y-1">
-              <span className="text-3xl sm:text-4xl font-serif text-[#C5A880] font-medium">₹10,000</span>
-              <p className="text-xs font-bold uppercase tracking-wider text-stone-300">Discovery Session</p>
+              <span className="text-3xl sm:text-4xl font-serif text-[#C5A880] font-medium">Bespoke</span>
+              <p className="text-xs font-bold uppercase tracking-wider text-stone-300">Spatial Practice</p>
               <p className="text-xs text-stone-400">Comprehensive site orientation & brief review</p>
             </Reveal>
 
@@ -155,7 +155,7 @@ export function HomePage({ business }: { business: BusinessConfig }) {
               title="Tailor your project scope before scheduling."
             >
               <p className="text-stone-400 text-sm max-w-2xl mt-4">
-                Use our interactive brief configurator to select your typology, site size, and structural needs. Baseline discovery sessions start at ₹10,000.
+                Use our interactive brief configurator to select your typology, site size, and structural needs before scheduling a studio consultation.
               </p>
             </SectionHeading>
           </Reveal>

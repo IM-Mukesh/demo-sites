@@ -90,7 +90,7 @@ const services: readonly Service[] = [
     name: "Residential & Commercial Consultation",
     summary: "A focused first conversation for a new build, adaptation or design question.",
     description:
-      "A simple proposed entry point for sharing a project location, priorities and open questions. Initial discovery sessions carry a baseline ₹10,000 consultation allocation.",
+      "A simple proposed entry point for sharing a project location, priorities and open questions. Initial discovery sessions help clarify spatial scope and site feasibility.",
     deliverables: ["Initial project conversation", "Questions and constraints list", "Suggested next step"],
     focus: ["Clarity", "Priorities", "Feasibility"],
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=85",
@@ -306,7 +306,7 @@ const faqs: readonly FAQItem[] = [
     id: "first-conversation",
     question: "What should I share before an initial conversation?",
     answer:
-      "A short description of the space, its location, what you would like to change and any timing or access constraints is a useful start. Photos, sketches or a simple list of priorities can also help. Initial discovery consultations carry a baseline ₹10,000 session allocation.",
+      "A short description of the space, its location, what you would like to change and any timing or access constraints is a useful start. Photos, sketches or a simple list of priorities can also help.",
     ownerApprovalRequired: true,
   },
   {
@@ -327,7 +327,7 @@ const faqs: readonly FAQItem[] = [
     id: "fees",
     question: "How are fees and project scope discussed?",
     answer:
-      "Discovery sessions carry a preliminary ₹10,000 consultation baseline. Full architectural design, statutory approval coordination, and site supervision fees are structured transparently based on project scale and complexity.",
+      "Consultations and project scope are discussed openly. Full architectural design, statutory approval coordination, and site supervision fees are structured transparently based on project scale and complexity.",
     ownerApprovalRequired: true,
   },
   {
@@ -350,7 +350,7 @@ const processSteps: readonly ProcessStep[] = [
   {
     number: "01",
     title: "Initial conversation & Discovery",
-    description: "Share the space, the people who use it and the question you want the design to help answer. Baseline ₹10,000 consultation discovery.",
+    description: "Share the space, the people who use it and the question you want the design to help answer.",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80",
     imageAlt: "Collaborative design consultation table with natural illumination",
     ownerApprovalRequired: true,

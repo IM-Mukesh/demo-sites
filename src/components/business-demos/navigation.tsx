@@ -70,7 +70,7 @@ export function Navigation({ business }: { business: BusinessConfig }) {
               Sector 57, Gurugram · Architectural Planning & Structural Glass
             </span>
             <span className="text-white/20">|</span>
-            <span className="text-[#C5A880] font-mono">₹10,000 Discovery Consultation</span>
+            <span className="text-[#C5A880] font-mono">Bespoke Architectural Studio</span>
           </div>
 
           <div className="flex items-center gap-4 text-stone-400">
@@ -251,7 +251,7 @@ export function Navigation({ business }: { business: BusinessConfig }) {
               <div className="max-w-lg mx-auto space-y-3">
                 <div className="flex items-center justify-between text-xs text-stone-400 mb-2">
                   <span>Sector 57, Gurugram</span>
-                  <span className="text-[#C5A880] font-mono">₹10,000 Discovery</span>
+                  <span className="text-[#C5A880] font-mono">By Prior Appointment</span>
                 </div>
 
                 <div className="grid grid-cols-2 gap-3">

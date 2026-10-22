@@ -22,7 +22,7 @@ import type { BusinessConfig } from "../../types/business";
 import { getCallUrl, getMapsUrl, getWhatsAppUrl } from "../../lib/site-utils";
 
 /* -------------------------------------------------------------------------- */
-/* 1. PROJECT SCOPE & CONSULTATION BUILDER (₹10,000 Discovery)                */
+/* 1. PROJECT SCOPE & CONSULTATION BUILDER                                    */
 /* -------------------------------------------------------------------------- */
 
 interface TypologyOption {
@@ -80,7 +80,6 @@ export function ProjectScopeBuilder({ business }: { business: BusinessConfig }) 
 • Project: ${selectedTypology.name} (${selectedPlot.label})
 • Structural Glazing / Glass Façade: ${includeGlassFacade ? "Included" : "Standard"}
 • Statutory & Municipal Sanctioning: ${includeStatutorySanctions ? "Required" : "Client Side"}
-• Consultation Baseline: ₹10,000 Discovery Session
 I would like to discuss scheduling an initial discovery meeting.`;
 
   const whatsappUrl = getWhatsAppUrl(business.contact.whatsapp, whatsappMessage);
@@ -106,9 +105,9 @@ I would like to discuss scheduling an initial discovery meeting.`;
             </p>
           </div>
           <div className="text-right">
-            <span className="text-xs uppercase tracking-widest text-stone-400 block">Discovery Consultation</span>
-            <span className="text-2xl sm:text-3xl font-serif text-[#C5A880] font-semibold">₹10,000</span>
-            <span className="text-xs text-stone-400 block mt-0.5">Comprehensive Studio Discovery</span>
+            <span className="text-xs uppercase tracking-widest text-stone-400 block">Studio Consultation</span>
+            <span className="text-xl sm:text-2xl font-serif text-[#C5A880] font-semibold">Bespoke Scope</span>
+            <span className="text-xs text-stone-400 block mt-0.5">Sector 57, Gurugram</span>
           </div>
         </div>
 
@@ -258,10 +257,10 @@ I would like to discuss scheduling an initial discovery meeting.`;
                 <div className="bg-[#1C1E1B] p-4 rounded-xl border border-white/10">
                   <div className="flex items-center justify-between">
                     <div>
-                      <span className="text-xs text-stone-400 block">Discovery Consultation</span>
+                      <span className="text-xs text-stone-400 block">Initial Discovery</span>
                       <span className="text-xs text-[#C5A880] font-medium">In-Studio or Site Briefing</span>
                     </div>
-                    <span className="text-2xl font-serif text-white font-bold">₹10,000</span>
+                    <span className="text-xs uppercase tracking-widest text-emerald-400 font-semibold px-2.5 py-1 rounded-md bg-emerald-950/60 border border-emerald-500/30">Available</span>
                   </div>
                   <p className="text-[11px] text-stone-400 mt-2">
                     Includes site orientation study, volumetric massing discussion, and statutory feasibility review.
@@ -554,8 +553,8 @@ export function StudioLocationCard({ business }: { business: BusinessConfig }) {
 
               <div className="grid grid-cols-2 gap-3 text-xs">
                 <div className="bg-white/5 p-3 rounded-lg border border-white/5">
-                  <span className="text-stone-400 block">Baseline Discovery</span>
-                  <span className="text-sm font-serif font-bold text-white mt-0.5 block">₹10,000</span>
+                  <span className="text-stone-400 block">Consultation Format</span>
+                  <span className="text-sm font-serif font-bold text-white mt-0.5 block">By Appointment</span>
                 </div>
                 <div className="bg-white/5 p-3 rounded-lg border border-white/5">
                   <span className="text-stone-400 block">Listing Status</span>
@@ -564,7 +563,7 @@ export function StudioLocationCard({ business }: { business: BusinessConfig }) {
               </div>
 
               <p className="text-[11px] text-stone-400 leading-relaxed italic">
-                * Check website & portfolio before consultation call. Consultations scheduled via prior briefing intake.
+                * Consultations scheduled via prior briefing intake and site appointment.
               </p>
             </div>
           </div>
@@ -601,7 +600,7 @@ export function StudioQuickBar({ business }: { business: BusinessConfig }) {
           </span>
           <div className="hidden sm:block">
             <span className="text-xs font-serif font-medium text-white block">ARCHITECT · Sector 57</span>
-            <span className="text-[10px] text-stone-400 block tracking-wider uppercase">Discovery Consultation · ₹10k</span>
+            <span className="text-[10px] text-stone-400 block tracking-wider uppercase">Architecture & Façade Studio</span>
           </div>
         </div>
 
