@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Gallery in the grove concept</title>
+  <desc id="desc">An original illustrative concept of a quiet stone gallery nestled among olive trees.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6F4EC"/>
+      <stop offset="1" stop-color="#DFD8CA"/>
+    </linearGradient>
+    <linearGradient id="gallery" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D7D0C4"/>
+      <stop offset="1" stop-color="#A59D90"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <path d="M0 522l219-132 231 98 263-133 260 146 257-102 370 149v352H0z" fill="#B0B4A2" opacity=".48"/>
+  <path d="M0 673h1600v227H0z" fill="#BDB5A8"/>
+  <path d="M292 337h1010v336H292z" fill="url(#gallery)"/>
+  <path d="M240 337h1062l-74-75H314z" fill="#7D786D"/>
+  <path d="M292 337h1010v44H292z" fill="#DCD4C7"/>
+  <path d="M430 381h330v292H430z" fill="#F0ECE5"/>
+  <path d="M760 381h367v292H760z" fill="#495953"/>
+  <path d="M879 381v292M998 381v292" stroke="#DCE3DB" stroke-width="7" opacity=".75"/>
+  <path d="M760 523h367" stroke="#DCE3DB" stroke-width="7" opacity=".75"/>
+  <path d="M292 673h1010v56H292z" fill="#50554D"/>
+  <path d="M180 729h1140l160 171H20z" fill="#AAA195"/>
+  <path d="M577 729h471l-73 171H650z" fill="#7A887C" opacity=".66"/>
+  <g fill="#66705A">
+    <circle cx="120" cy="481" r="62"/><circle cx="184" cy="510" r="49"/><circle cx="1490" cy="466" r="67"/><circle cx="1551" cy="508" r="49"/>
+  </g>
+  <g stroke="#4C584C" stroke-width="10"><path d="M120 540v218M1490 535v223"/></g>
+  <path d="M0 823h1600" stroke="#81796E" stroke-width="4"/>
+</svg>

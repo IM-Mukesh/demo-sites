@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 720" role="img" aria-labelledby="title desc">
+  <title id="title">Night clerestory concept</title>
+  <desc id="desc">An original illustrative concept of a long low building glowing beneath a deep blue evening sky.</desc>
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#252D32"/>
+      <stop offset="1" stop-color="#58655F"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9C18D"/>
+      <stop offset=".5" stop-color="#F0D9A2"/>
+      <stop offset="1" stop-color="#BCA56F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1680" height="720" fill="url(#night)"/>
+  <circle cx="1320" cy="125" r="58" fill="#E0D3B5" opacity=".72"/>
+  <path d="M0 493l260-100 239 85 257-112 279 115 240-97 405 114v222H0z" fill="#4D5A54"/>
+  <path d="M0 600h1680v120H0z" fill="#242925"/>
+  <path d="M206 301h1262v299H206z" fill="#282D2A"/>
+  <path d="M158 301h1360l-85-67H246z" fill="#171C1A"/>
+  <path d="M206 301h1262v40H206z" fill="#51564E"/>
+  <path d="M309 361h1056v110H309z" fill="url(#glow)"/>
+  <path d="M485 361v110M661 361v110M837 361v110M1013 361v110M1189 361v110" stroke="#4C554B" stroke-width="8" opacity=".72"/>
+  <path d="M206 471h1262v129H206z" fill="#1D2320"/>
+  <path d="M520 471h474v129H520z" fill="#516760" opacity=".8"/>
+  <path d="M341 600h998l92 120H249z" fill="#6D7168"/>
+  <g fill="#66705A">
+    <circle cx="114" cy="530" r="65"/><circle cx="175" cy="557" r="48"/><circle cx="1544" cy="517" r="65"/><circle cx="1603" cy="552" r="48"/>
+  </g>
+  <g stroke="#465248" stroke-width="10"><path d="M114 589v131M1544 577v143"/></g>
+  <path d="M0 664h1680" stroke="#768177" stroke-width="4"/>
+</svg>

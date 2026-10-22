@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">ARCHITECT favicon</title>
+  <desc id="desc">A charcoal architectural frame with an olive window.</desc>
+  <rect width="64" height="64" rx="14" fill="#F3EFE7"/>
+  <path d="M14 12h36v40H14z" fill="none" stroke="#232522" stroke-width="4"/>
+  <path d="M14 31h36M32 12v40" fill="none" stroke="#232522" stroke-width="3"/>
+  <path d="M32 31h18v21H32z" fill="#66705A"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">ARCHITECT concept website preview</title>
+  <desc id="desc">A warm ivory architectural composition with a quiet stone volume, olive trees, and the ARCHITECT wordmark.</desc>
+  <defs>
+    <linearGradient id="social-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8F5EF"/>
+      <stop offset="1" stop-color="#E5DED2"/>
+    </linearGradient>
+    <linearGradient id="social-stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#BDB4A6"/>
+      <stop offset="1" stop-color="#948B7D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#social-sky)"/>
+  <rect x="0" y="496" width="1200" height="134" fill="#D4CCBE"/>
+  <path d="M660 278h430v218H660z" fill="url(#social-stone)"/>
+  <path d="M660 278h314v218H660z" fill="#C9C0B1"/>
+  <path d="M660 278l100-76h330l-100 76z" fill="#827A6F"/>
+  <path d="M760 202h330v76H760z" fill="#252925"/>
+  <path d="M812 300h226v152H812z" fill="#58665B"/>
+  <path d="M890 300v152M965 300v152" stroke="#E1E6DF" stroke-width="5" opacity=".72"/>
+  <path d="M812 376h226" stroke="#E1E6DF" stroke-width="5" opacity=".72"/>
+  <path d="M1048 452h42v44h-42z" fill="#465044"/>
+  <g fill="#66705A">
+    <circle cx="1070" cy="439" r="30"/>
+    <circle cx="1100" cy="451" r="24"/>
+    <circle cx="1038" cy="453" r="22"/>
+  </g>
+  <path d="M0 545h760" stroke="#A89F92" stroke-width="2"/>
+  <g transform="translate(76 92)">
+    <rect width="86" height="86" rx="16" fill="#F3EFE7"/>
+    <path d="M19 17h48v52H19z" fill="none" stroke="#232522" stroke-width="5"/>
+    <path d="M19 43h48M43 17v52" fill="none" stroke="#232522" stroke-width="3"/>
+    <path d="M43 43h24v26H43z" fill="#66705A"/>
+  </g>
+  <g fill="#232522" font-family="Helvetica Neue, Arial, sans-serif">
+     <text x="76" y="266" font-size="78" font-weight="500" letter-spacing="10">ARCHITECT</text>
+     <text x="82" y="315" font-size="18" letter-spacing="6" fill="#66705A">SECTOR 57 · GURUGRAM</text>
+    <text x="82" y="402" font-size="26" letter-spacing="2" fill="#4A4D47">Spaces with a quiet gravity.</text>
+  </g>
+</svg>

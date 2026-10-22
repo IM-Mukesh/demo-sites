@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" role="img" aria-labelledby="title desc">
+  <title id="title">ARCHITECT wordmark</title>
+  <desc id="desc">The provisional ARCHITECT wordmark with an abstract window-grid mark.</desc>
+  <g transform="translate(20 20)">
+    <rect width="140" height="140" rx="24" fill="#F3EFE7"/>
+    <path d="M29 27h82v86H29z" fill="none" stroke="#232522" stroke-width="7"/>
+    <path d="M29 68h82M70 27v86" fill="none" stroke="#232522" stroke-width="4"/>
+    <path d="M70 68h41v45H70z" fill="#66705A"/>
+    <path d="M29 27l41 41" fill="none" stroke="#B8AF9F" stroke-width="3"/>
+  </g>
+  <g fill="#232522" font-family="Helvetica Neue, Arial, sans-serif">
+     <text x="196" y="91" font-size="68" font-weight="500" letter-spacing="9">ARCHITECT</text>
+     <text x="201" y="130" font-size="16" letter-spacing="5" fill="#66705A">SECTOR 57 · GURUGRAM</text>
+  </g>
+</svg>

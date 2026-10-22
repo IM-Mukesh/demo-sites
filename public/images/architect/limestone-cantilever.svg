@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Limestone cantilever concept</title>
+  <desc id="desc">An original illustrative concept of pale limestone volumes hovering above a shaded entry court.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAF7F1"/>
+      <stop offset="1" stop-color="#E5DED1"/>
+    </linearGradient>
+    <linearGradient id="limestone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D5CDBF"/>
+      <stop offset="1" stop-color="#A9A093"/>
+    </linearGradient>
+  </defs>
+  <rect width="1250" height="1000" fill="url(#sky)"/>
+  <circle cx="1028" cy="160" r="66" fill="#E5C988" opacity=".6"/>
+  <path d="M0 676h1250v324H0z" fill="#C8C0B2"/>
+  <path d="M182 352h789v306H182z" fill="url(#limestone)"/>
+  <path d="M140 352h886l-83-86H223z" fill="#8E8679"/>
+  <path d="M182 352h789v48H182z" fill="#D9D1C4"/>
+  <path d="M392 400h579v91H392z" fill="#615F56"/>
+  <path d="M392 491h579v167H392z" fill="#746D61"/>
+  <path d="M515 491h324v167H515z" fill="#7E9188"/>
+  <path d="M623 491v167M731 491v167" stroke="#E2E6DF" stroke-width="6" opacity=".8"/>
+  <path d="M183 565h208v93H183z" fill="#9C9488"/>
+  <path d="M183 565h208v28H183z" fill="#BEB5A8"/>
+  <path d="M263 658v154h44V658" fill="#6E675C"/>
+  <path d="M971 658v154h44V658" fill="#6E675C"/>
+  <path d="M121 812h1050l79 188H42z" fill="#B0A99D"/>
+  <path d="M485 812h275l-25 188H510z" fill="#7A877D" opacity=".6"/>
+  <g fill="#66705A">
+    <circle cx="111" cy="550" r="50"/><circle cx="162" cy="570" r="42"/><circle cx="1086" cy="504" r="48"/><circle cx="1142" cy="535" r="42"/>
+  </g>
+  <g stroke="#4B574C" stroke-width="9"><path d="M111 582v226M1086 544v268"/></g>
+  <path d="M0 896h1250" stroke="#888073" stroke-width="4"/>
+</svg>

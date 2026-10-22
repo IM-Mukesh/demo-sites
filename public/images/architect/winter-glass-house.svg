@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Winter glass house concept</title>
+  <desc id="desc">An original illustrative concept of a dark-framed glass house resting on a pale winter landscape.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EDF1EF"/>
+      <stop offset="1" stop-color="#D5DEDC"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A2B8B4"/>
+      <stop offset="1" stop-color="#5A716D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1250" height="1000" fill="url(#sky)"/>
+  <path d="M0 490l252-137 249 112 242-143 258 136 249-99v260H0z" fill="#B6C1BB" opacity=".7"/>
+  <path d="M0 650h1250v350H0z" fill="#E6E8E4"/>
+  <path d="M212 390h835v269H212z" fill="url(#glass)"/>
+  <path d="M164 390h931l-97-84H258z" fill="#262D2B"/>
+  <path d="M212 390h835v34H212z" fill="#4C5B57"/>
+  <g stroke="#E3E9E5" stroke-width="7" opacity=".72">
+    <path d="M420 390v269M629 390v269M838 390v269"/>
+    <path d="M212 524h835"/>
+  </g>
+  <path d="M212 659h835v52H212z" fill="#303936"/>
+  <path d="M124 711h1055l-72 289H143z" fill="#C9CFCA"/>
+  <path d="M483 711h283l-35 289H518z" fill="#9DAFA8" opacity=".58"/>
+  <path d="M122 846c126-32 199 13 302-7 121-24 200 27 315 4 135-27 247 7 411-11v41c-169 26-270-12-405 14-120 23-201-31-321-5-104 22-194-24-302 3z" fill="#FFFFFF" opacity=".64"/>
+  <g stroke="#687870" stroke-width="8"><path d="M105 709v291M1137 711v289"/></g>
+  <g fill="#8C9A90"><path d="M105 564l-65 123h130zM1137 588l-58 109h116z"/></g>
+  <path d="M0 914h1250" stroke="#B7C0BA" stroke-width="4"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Monolithic house concept</title>
+  <desc id="desc">An original illustrative concept of a long dark stone residence with a cantilevered roof and a warm window band.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EEF0EA"/>
+      <stop offset="1" stop-color="#D8D6CB"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C7C2B7"/>
+      <stop offset="1" stop-color="#9E9A8F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <path d="M0 550l238-140 186 77 214-175 239 155 208-113 515 192v214H0z" fill="#9FA59C" opacity=".48"/>
+  <path d="M0 660l315-110 260 86 256-104 249 120 520-102v450H0z" fill="url(#ground)"/>
+  <path d="M254 430h1048v270H254z" fill="#343735"/>
+  <path d="M187 430h1115l-67-76H260z" fill="#222522"/>
+  <path d="M254 430h1048v42H254z" fill="#4A4D48"/>
+  <path d="M387 520h727v111H387z" fill="#6D7B70"/>
+  <path d="M507 520v111M629 520v111M751 520v111M873 520v111M995 520v111" stroke="#D5DBD2" stroke-width="6" opacity=".65"/>
+  <path d="M387 576h727" stroke="#D5DBD2" stroke-width="6" opacity=".65"/>
+  <path d="M254 631h1048v69H254z" fill="#282C29"/>
+  <path d="M305 700h950l151 300H180z" fill="#AAA59A"/>
+  <path d="M503 700h486l-42 300H556z" fill="#686E67" opacity=".58"/>
+  <g fill="#64715F">
+    <circle cx="157" cy="638" r="58"/><circle cx="220" cy="605" r="67"/><circle cx="283" cy="642" r="54"/>
+    <circle cx="1380" cy="616" r="60"/><circle cx="1444" cy="648" r="50"/><circle cx="1500" cy="617" r="42"/>
+  </g>
+  <g stroke="#4D594C" stroke-width="10"><path d="M220 660v166M1380 653v178"/></g>
+  <path d="M0 832h1600" stroke="#807C72" stroke-width="4"/>
+</svg>

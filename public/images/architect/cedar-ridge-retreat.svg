@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Cedar ridge retreat concept</title>
+  <desc id="desc">An original illustrative concept of a cedar and stone retreat set into a quiet ridge landscape.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EDEDE5"/>
+      <stop offset="1" stop-color="#D5D1C4"/>
+    </linearGradient>
+    <linearGradient id="cedar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7F725E"/>
+      <stop offset="1" stop-color="#4C5046"/>
+    </linearGradient>
+  </defs>
+  <rect width="1500" height="1000" fill="url(#sky)"/>
+  <path d="M0 536l230-186 186 126 228-228 255 225 236-163 365 226v464H0z" fill="#A7AAA0" opacity=".58"/>
+  <path d="M0 690l226-84 264 79 267-116 261 100 253-65 229 94v302H0z" fill="#999A8D"/>
+  <path d="M0 773l325-102 280 86 257-114 309 96 329-77v338H0z" fill="#747A6C"/>
+  <path d="M445 466h598v254H445z" fill="url(#cedar)"/>
+  <path d="M414 466h660l-120-104H535z" fill="#3A3E38"/>
+  <path d="M445 466h598v34H445z" fill="#9D8A6B"/>
+  <path d="M560 522h368v150H560z" fill="#7C9287"/>
+  <path d="M684 522v150M806 522v150" stroke="#E1E5DD" stroke-width="7" opacity=".72"/>
+  <path d="M560 596h368" stroke="#E1E5DD" stroke-width="7" opacity=".72"/>
+  <path d="M445 672h598v48H445z" fill="#393E38"/>
+  <g stroke="#3E483E" stroke-width="10">
+    <path d="M123 800V616M246 826V595M1280 822V607M1401 800V637"/>
+  </g>
+  <g fill="#53614F">
+    <path d="M123 506l-86 137h172zM246 471l-98 156h196zM1280 484l-95 154h190zM1401 530l-82 132h164z"/>
+  </g>
+  <path d="M445 720l-80 280h725l-80-280z" fill="#B0A999"/>
+  <path d="M561 748h370l-39 252H600z" fill="#65726A" opacity=".7"/>
+  <path d="M0 905h1500" stroke="#676D62" stroke-width="5"/>
+</svg>

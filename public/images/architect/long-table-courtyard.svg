@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Long table courtyard concept</title>
+  <desc id="desc">An original illustrative concept of a shaded courtyard with a long communal table beneath a timber pergola.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF7EF"/>
+      <stop offset="1" stop-color="#E1D9CC"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C8BDAE"/>
+      <stop offset="1" stop-color="#9A9185"/>
+    </linearGradient>
+  </defs>
+  <rect width="1500" height="1000" fill="url(#sky)"/>
+  <circle cx="1227" cy="174" r="58" fill="#E6C98E" opacity=".6"/>
+  <path d="M0 620h1500v380H0z" fill="#BDB4A6"/>
+  <path d="M162 280h1176v362H162z" fill="url(#wall)"/>
+  <path d="M162 280h1176v49H162z" fill="#D7CEC0"/>
+  <path d="M285 329h930v313H285z" fill="#5F6E62"/>
+  <path d="M285 329h930v48H285z" fill="#3D443D"/>
+  <g stroke="#2D342F" stroke-width="22"><path d="M351 280v362M541 280v362M731 280v362M921 280v362M1111 280v362"/></g>
+  <g fill="#8D6E4F"><path d="M312 253h100v33H312zM502 253h100v33H502zM692 253h100v33H692zM882 253h100v33H882zM1072 253h100v33h-100z"/></g>
+  <path d="M345 679h810v52H345z" fill="#6F5740"/>
+  <path d="M425 731v131M1075 731v131" stroke="#6F5740" stroke-width="24"/>
+  <path d="M185 862h1130l130 138H55z" fill="#AAA093"/>
+  <path d="M423 862h654l-64 138H487z" fill="#818B7D" opacity=".64"/>
+  <g fill="#66705A">
+    <circle cx="103" cy="507" r="58"/><circle cx="164" cy="535" r="48"/><circle cx="1391" cy="489" r="62"/><circle cx="1451" cy="526" r="48"/>
+  </g>
+  <g stroke="#4D594C" stroke-width="9"><path d="M103 563v230M1391 551v235"/></g>
+  <path d="M0 925h1500" stroke="#80796E" stroke-width="4"/>
+</svg>

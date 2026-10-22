@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">ARCHITECT geometric mark</title>
+  <desc id="desc">An abstract architectural plan built from a charcoal frame, ivory void, and olive window.</desc>
+  <rect width="120" height="120" rx="20" fill="#F3EFE7"/>
+  <path d="M24 22h72v76H24z" fill="none" stroke="#232522" stroke-width="6"/>
+  <path d="M24 58h72M59 22v76" fill="none" stroke="#232522" stroke-width="4"/>
+  <path d="M59 58h37v40H59z" fill="#66705A"/>
+  <path d="M24 22l35 36" fill="none" stroke="#B8AF9F" stroke-width="3"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Stone and shadow concept</title>
+  <desc id="desc">An original illustrative concept of a compact stone volume with a sharp afternoon shadow across its courtyard.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8F4EC"/>
+      <stop offset="1" stop-color="#D9D0C2"/>
+    </linearGradient>
+    <linearGradient id="facade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#CAC1B2"/>
+      <stop offset="1" stop-color="#8F887D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <path d="M0 598h1200v302H0z" fill="#BFB7AA"/>
+  <path d="M226 234h670v405H226z" fill="url(#facade)"/>
+  <path d="M226 234h670l-67-70H293z" fill="#777067"/>
+  <path d="M226 234h670v46H226z" fill="#D1C8BA"/>
+  <path d="M319 280h577v359H319z" fill="#B6AEA1"/>
+  <path d="M319 280h252v359H319z" fill="#D2C9BB"/>
+  <path d="M571 280h325v198H571z" fill="#3E4943"/>
+  <path d="M627 280v198M734 280v198M841 280v198" stroke="#D9E2D9" stroke-width="7" opacity=".72"/>
+  <path d="M571 378h325" stroke="#D9E2D9" stroke-width="7" opacity=".72"/>
+  <path d="M226 639h670l231 261H0z" fill="#A9A093"/>
+  <path d="M318 639h552l-189 261H507z" fill="#636C63" opacity=".72"/>
+  <path d="M226 639l345-178 325 178H226z" fill="#65645C" opacity=".7"/>
+  <g fill="#68735E">
+    <circle cx="112" cy="489" r="52"/><circle cx="165" cy="518" r="41"/><circle cx="1040" cy="514" r="57"/><circle cx="1094" cy="548" r="43"/>
+  </g>
+  <g stroke="#4A5549" stroke-width="9"><path d="M112 541v210M1040 571v188"/></g>
+  <path d="M0 817h1200" stroke="#81796E" stroke-width="4"/>
+</svg>

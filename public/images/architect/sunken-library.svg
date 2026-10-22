@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" role="img" aria-labelledby="title desc">
+  <title id="title">Sunken library concept</title>
+  <desc id="desc">An original illustrative concept of a sunken library courtyard, reached by broad stone steps.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F5EF"/>
+      <stop offset="1" stop-color="#DFD9CE"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B2A99B"/>
+      <stop offset="1" stop-color="#847D71"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#sky)"/>
+  <circle cx="160" cy="166" r="58" fill="#E5C996" opacity=".58"/>
+  <path d="M0 530h1000v720H0z" fill="#C9C1B4"/>
+  <path d="M106 428h788v438H106z" fill="url(#wall)"/>
+  <path d="M106 428h788v54H106z" fill="#D5CDC0"/>
+  <path d="M185 866h630v214H185z" fill="#4C534B"/>
+  <path d="M242 866h516v214H242z" fill="#6F8176"/>
+  <path d="M373 866v214M504 866v214M635 866v214" stroke="#D7DFD7" stroke-width="6" opacity=".72"/>
+  <path d="M242 964h516" stroke="#D7DFD7" stroke-width="6" opacity=".72"/>
+  <path d="M106 866l78 55v224l-78-56z" fill="#91897C"/>
+  <path d="M894 866l-79 55v224l79-56z" fill="#726B60"/>
+  <g fill="#B5AC9D">
+    <path d="M106 930h78v33h-78zM106 988h78v33h-78zM106 1046h78v33h-78zM106 1104h78v33h-78z"/>
+    <path d="M816 930h78v33h-78zM816 988h78v33h-78zM816 1046h78v33h-78zM816 1104h78v33h-78z"/>
+  </g>
+  <path d="M0 1128h1000v122H0z" fill="#A9A193"/>
+  <path d="M455 116h90v320h-90z" fill="#66705A"/>
+  <circle cx="500" cy="134" r="95" fill="#66705A"/>
+  <circle cx="436" cy="161" r="58" fill="#738064"/>
+  <circle cx="563" cy="171" r="63" fill="#5C6955"/>
+  <path d="M500 194v234" stroke="#4B574C" stroke-width="11"/>
+  <path d="M0 1214h1000" stroke="#857E72" stroke-width="4"/>
+</svg>

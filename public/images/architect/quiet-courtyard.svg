@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Quiet courtyard concept</title>
+  <desc id="desc">An original illustrative concept of a stone courtyard house with a reflecting pool and olive trees.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F9F6F0"/>
+      <stop offset="1" stop-color="#E7E0D4"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C6BEB1"/>
+      <stop offset="1" stop-color="#9E9689"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <circle cx="932" cy="152" r="55" fill="#E4C998" opacity=".62"/>
+  <path d="M0 570l180-105 210 92 183-115 240 130 205-90 182 104v314H0z" fill="#B5B7A2" opacity=".38"/>
+  <path d="M0 652h1200v248H0z" fill="#D1C8B9"/>
+  <path d="M158 331h312v321H158z" fill="url(#stone)"/>
+  <path d="M730 274h326v378H730z" fill="#B4AB9C"/>
+  <path d="M158 331h312v46H158zM730 274h326v48H730z" fill="#827B70"/>
+  <path d="M470 352l260-78v378H470z" fill="#EEEAE2"/>
+  <path d="M470 352h112v300H470z" fill="#D6CEC1"/>
+  <path d="M534 423h156v178H534z" fill="#59695C"/>
+  <path d="M612 423v178M534 512h156" stroke="#D8E0D8" stroke-width="7" opacity=".75"/>
+  <g fill="#2F3831">
+    <path d="M205 652V452h21v200zM237 652V426h20v226zM269 652V468h20v184z"/>
+    <path d="M766 652V384h22v268zM802 652V362h20v290zM838 652V402h21v250z"/>
+  </g>
+  <path d="M0 728h1200" stroke="#B4AA9B" stroke-width="4"/>
+  <path d="M305 720h590l105 180H205z" fill="#B6B1A5"/>
+  <path d="M379 741h434l62 159H316z" fill="#84918B" opacity=".7"/>
+  <path d="M379 741h434l-30 27H409z" fill="#E6E3DD" opacity=".65"/>
+  <g fill="#66705A">
+    <circle cx="113" cy="489" r="39"/><circle cx="154" cy="469" r="46"/><circle cx="196" cy="494" r="38"/>
+    <circle cx="1084" cy="420" r="44"/><circle cx="1130" cy="445" r="36"/><circle cx="1045" cy="451" r="33"/>
+  </g>
+  <g stroke="#4A5549" stroke-width="8"><path d="M154 500v152M1084 458v194"/></g>
+  <path d="M0 898h1200" stroke="#8B8377" stroke-width="5"/>
+</svg>

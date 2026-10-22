@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1333" role="img" aria-labelledby="title desc">
+  <title id="title">Threshold stair concept</title>
+  <desc id="desc">An original illustrative concept of a tall stone threshold with a ceremonial stair and clerestory light.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F9F6F0"/>
+      <stop offset="1" stop-color="#D8D2C6"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B8B0A1"/>
+      <stop offset="1" stop-color="#7E786D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1333" fill="url(#sky)"/>
+  <circle cx="808" cy="175" r="66" fill="#E7C98D" opacity=".6"/>
+  <path d="M0 906h1000v427H0z" fill="#B9B0A1"/>
+  <path d="M92 254h816v783H92z" fill="url(#stone)"/>
+  <path d="M92 254h816v60H92z" fill="#D0C7BA"/>
+  <path d="M224 314h552v723H224z" fill="#343936"/>
+  <path d="M284 314h432v474H284z" fill="#647B71"/>
+  <path d="M388 314v474M612 314v474" stroke="#DDE4DD" stroke-width="8" opacity=".68"/>
+  <path d="M284 551h432" stroke="#DDE4DD" stroke-width="8" opacity=".68"/>
+  <path d="M224 787h552v250H224z" fill="#535950"/>
+  <path d="M264 808h472v49H264zM264 879h472v49H264zM264 950h472v49H264z" fill="#A8A093"/>
+  <path d="M224 1037h552l87 296H137z" fill="#A29A8D"/>
+  <path d="M426 1037h148l-18 296H444z" fill="#718078" opacity=".62"/>
+  <g fill="#66705A">
+    <circle cx="76" cy="620" r="52"/><circle cx="924" cy="570" r="64"/><circle cx="968" cy="622" r="46"/>
+  </g>
+  <g stroke="#4A5549" stroke-width="10"><path d="M76 670v320M924 636v355"/></g>
+  <path d="M0 1199h1000" stroke="#80786D" stroke-width="4"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Olive garden pavilion concept</title>
+  <desc id="desc">An original illustrative concept of a slender garden pavilion framed by olive trees.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F9F5ED"/>
+      <stop offset="1" stop-color="#E8DFD0"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#92A69B"/>
+      <stop offset="1" stop-color="#536A62"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#sky)"/>
+  <circle cx="770" cy="164" r="57" fill="#E8C989" opacity=".58"/>
+  <path d="M0 600c200-90 364-86 540 0 180 88 302 45 460-18v418H0z" fill="#A9AC91"/>
+  <path d="M0 764h1000v236H0z" fill="#BDB3A3"/>
+  <path d="M210 402h580v335H210z" fill="url(#glass)"/>
+  <path d="M178 402h644l-45-45H223z" fill="#2E3530"/>
+  <path d="M210 402h580v31H210z" fill="#66705A"/>
+  <g stroke="#DCE1D8" stroke-width="7" opacity=".76">
+    <path d="M355 402v335M500 402v335M645 402v335"/>
+    <path d="M210 569h580"/>
+  </g>
+  <path d="M165 737h670l-46 70H211z" fill="#6F766B"/>
+  <path d="M103 807h790l-92 193H196z" fill="#9E978A"/>
+  <path d="M367 807h268l-18 193H385z" fill="#798B82" opacity=".7"/>
+  <g stroke="#4B574C" stroke-width="10">
+    <path d="M106 741v259M896 736v264M66 816v184"/>
+  </g>
+  <g fill="#66705A">
+    <circle cx="106" cy="536" r="74"/><circle cx="57" cy="584" r="56"/><circle cx="160" cy="583" r="54"/>
+    <circle cx="896" cy="541" r="76"/><circle cx="841" cy="582" r="55"/><circle cx="946" cy="584" r="58"/>
+  </g>
+  <path d="M0 917h1000" stroke="#7F796E" stroke-width="4"/>
+</svg>

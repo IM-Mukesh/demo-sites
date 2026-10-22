@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Hillside residence concept</title>
+  <desc id="desc">An original illustrative concept of a stepped residence following a sloping hillside with planted terraces.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5F4ED"/>
+      <stop offset="1" stop-color="#DBD7CC"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9BA394"/>
+      <stop offset="1" stop-color="#70796D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <path d="M0 454l312-118 221 82 269-142 280 161 232-91 286 127v226H0z" fill="#AEB2A5" opacity=".56"/>
+  <path d="M0 604h1600v396H0z" fill="url(#hill)"/>
+  <path d="M0 786l288-85 244 55 253-113 318 91 497-116v382H0z" fill="#626F61"/>
+  <path d="M260 632h506v125H260z" fill="#B5ADA0"/>
+  <path d="M558 507h525v125H558z" fill="#C9C1B4"/>
+  <path d="M879 382h464v125H879z" fill="#D9D1C4"/>
+  <path d="M220 632h546l-38-45H258zM518 507h565l-38-45H556zM839 382h504l-38-45H877z" fill="#777166"/>
+  <path d="M342 681h294v76H342z" fill="#60736B"/>
+  <path d="M655 556h300v76H655z" fill="#62766D"/>
+  <path d="M983 431h270v76H983z" fill="#697B71"/>
+  <path d="M440 681v76M538 681v76M755 556v76M855 556v76M1073 431v76M1173 431v76" stroke="#DCE4DC" stroke-width="6" opacity=".72"/>
+  <g fill="#66705A">
+    <circle cx="154" cy="599" r="56"/><circle cx="207" cy="632" r="47"/><circle cx="1388" cy="424" r="64"/><circle cx="1450" cy="458" r="49"/>
+  </g>
+  <g stroke="#4C594D" stroke-width="10"><path d="M154 654v206M1388 488v224"/></g>
+  <path d="M0 923h1600" stroke="#7A8277" stroke-width="4"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Coastal concrete house concept</title>
+  <desc id="desc">An original illustrative concept of a concrete coastal house opening toward a calm horizon.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6F6F0"/>
+      <stop offset="1" stop-color="#D6DFDB"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A9C2BB"/>
+      <stop offset="1" stop-color="#789994"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <path d="M0 452h1600v214H0z" fill="url(#sea)"/>
+  <path d="M0 665h1600v235H0z" fill="#BEB7A9"/>
+  <path d="M0 504c230-31 356 27 563-2 227-32 390 28 617-1 150-18 285-13 420 7v28H0z" fill="#D5E0DC" opacity=".56"/>
+  <path d="M370 270h884v395H370z" fill="#A9A69C"/>
+  <path d="M294 270h960l-96-86H390z" fill="#6E716A"/>
+  <path d="M370 270h884v47H370z" fill="#CDC7BB"/>
+  <path d="M500 347h594v222H500z" fill="#566B67"/>
+  <path d="M648 347v222M797 347v222M946 347v222" stroke="#DCE3DF" stroke-width="7" opacity=".76"/>
+  <path d="M500 458h594" stroke="#DCE3DF" stroke-width="7" opacity=".76"/>
+  <path d="M370 569h884v96H370z" fill="#4B504A"/>
+  <path d="M260 665h1054l138 235H122z" fill="#AAA397"/>
+  <path d="M568 665h372l-55 235H623z" fill="#7B8D86" opacity=".68"/>
+  <g fill="#69745F">
+    <circle cx="136" cy="594" r="54"/><circle cx="190" cy="622" r="48"/><circle cx="1470" cy="575" r="50"/><circle cx="1524" cy="615" r="43"/>
+  </g>
+  <g stroke="#4D584C" stroke-width="9"><path d="M136 638v176M1470 620v178"/></g>
+  <path d="M0 818h1600" stroke="#827A70" stroke-width="4"/>
+</svg>
