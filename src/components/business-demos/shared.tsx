@@ -6,7 +6,7 @@ import type { BusinessConfig, Project, Service } from "../../types/business";
 import { buildDemoPath, getCallUrl, getMapsUrl, getWhatsAppUrl } from "../../lib/site-utils";
 
 export function siteHref(business: BusinessConfig, ...segments: string[]): string {
-  return buildDemoPath(business.slug, segments);
+  return buildDemoPath(business.slug, segments, "/demo");
 }
 
 export function SiteImage({

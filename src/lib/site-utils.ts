@@ -25,7 +25,7 @@ export function joinSitePath(...parts: readonly string[]): string {
 
 export function getDemoBasePath(
   slug: string,
-  appBasePath = "",
+  appBasePath = "/demo",
 ): string {
   return joinSitePath(normalizeBasePath(appBasePath), slug);
 }
@@ -33,7 +33,7 @@ export function getDemoBasePath(
 export function buildDemoPath(
   slug: string,
   pageSegments: readonly string[] = [],
-  appBasePath = "",
+  appBasePath = "/demo",
 ): string {
   return joinSitePath(
     normalizeBasePath(appBasePath),

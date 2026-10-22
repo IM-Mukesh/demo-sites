@@ -19,7 +19,7 @@ export function Navigation({ business }: { business: BusinessConfig }) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const atHome = pathname === siteHref(business);
+  const atHome = pathname === siteHref(business) || pathname === `/demo/${business.slug}` || pathname === `/${business.slug}`;
   const callUrl = getCallUrl(business.contact.phone);
   const mapUrl = getMapsUrl(business.location);
   const whatsappUrl = getWhatsAppUrl(
@@ -41,10 +41,12 @@ export function Navigation({ business }: { business: BusinessConfig }) {
     };
   }, [menuOpen]);
 
-  // Close menu on route change or Escape key press
-  useEffect(() => {
+  // Close menu on route change
+  const [prevPathname, setPrevPathname] = useState(pathname);
+  if (prevPathname !== pathname) {
+    setPrevPathname(pathname);
     setMenuOpen(false);
-  }, [pathname]);
+  }
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
@@ -58,50 +60,50 @@ export function Navigation({ business }: { business: BusinessConfig }) {
 
   return (
     <>
-      {/* Top Studio Bar (Desktop) */}
-      <div className="studio-top-ticker bg-[#0D0E0C] text-stone-300 text-[11px] py-1.5 px-4 border-b border-white/10 hidden md:block relative z-30">
-        <div className="container-wide flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <span className="inline-flex items-center gap-1.5 text-amber-300 font-medium">
-              <Star size={11} className="fill-amber-300" /> 5.0 Star Studio
-            </span>
-            <span className="text-white/20">|</span>
-            <span className="text-stone-300">
-              Sector 57, Gurugram · Architectural Planning & Structural Glass
-            </span>
-            <span className="text-white/20">|</span>
-            <span className="text-[#C5A880] font-mono">Bespoke Architectural Studio</span>
-          </div>
-
-          <div className="flex items-center gap-4 text-stone-400">
-            {mapUrl && (
-              <a
-                href={mapUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-white transition-colors flex items-center gap-1"
-              >
-                <MapPin size={11} className="text-[#C5A880]" /> Sushant Lok 2, Sector 57
-              </a>
-            )}
-            {callUrl && (
-              <a
-                href={callUrl}
-                className="hover:text-white transition-colors flex items-center gap-1 text-white font-semibold"
-              >
-                <Phone size={11} className="text-[#C5A880]" /> {business.contact.phone}
-              </a>
-            )}
-          </div>
-        </div>
-      </div>
-
       {/* Main Sticky Header */}
       <header
         className={`site-header ${!atHome ? "site-header--solid" : ""} ${
           scrolled ? "site-header--scrolled" : ""
         } ${menuOpen ? "site-header--open" : ""}`}
       >
+        {/* Top Studio Bar (Desktop) */}
+        <div className="studio-top-ticker bg-[#0D0E0C]/90 text-stone-300 text-[11px] py-1.5 px-4 border-b border-white/10 hidden md:block">
+          <div className="container-wide flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <span className="inline-flex items-center gap-1.5 text-amber-300 font-medium">
+                <Star size={11} className="fill-amber-300" /> 5.0 Star Studio
+              </span>
+              <span className="text-white/20">|</span>
+              <span className="text-stone-300">
+                Sector 57, Gurugram · Architectural Planning &amp; Structural Glass
+              </span>
+              <span className="text-white/20">|</span>
+              <span className="text-[#C5A880] font-mono">Bespoke Architectural Studio</span>
+            </div>
+
+            <div className="flex items-center gap-4 text-stone-400">
+              {mapUrl && (
+                <a
+                  href={mapUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-white transition-colors flex items-center gap-1"
+                >
+                  <MapPin size={11} className="text-[#C5A880]" /> Sushant Lok 2, Sector 57
+                </a>
+              )}
+              {callUrl && (
+                <a
+                  href={callUrl}
+                  className="hover:text-white transition-colors flex items-center gap-1 text-white font-semibold"
+                >
+                  <Phone size={11} className="text-[#C5A880]" /> {business.contact.phone}
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+
         <div className="site-header__inner container-wide">
           <Link
             className="site-header__brand"
@@ -111,10 +113,12 @@ export function Navigation({ business }: { business: BusinessConfig }) {
           >
             <Image
               src="/brand/architect-wordmark.svg"
-              width={180}
+              width={160}
               height={40}
               alt={business.branding.name}
               priority
+              style={{ width: "auto", height: "32px" }}
+              className="h-8 sm:h-9 w-auto max-w-[140px] sm:max-w-[160px] object-contain"
             />
           </Link>
 
@@ -189,10 +193,11 @@ export function Navigation({ business }: { business: BusinessConfig }) {
               <Link href={siteHref(business)} onClick={closeMenu} className="inline-block">
                 <Image
                   src="/brand/architect-wordmark.svg"
-                  width={155}
-                  height={36}
+                  width={160}
+                  height={40}
                   alt={business.branding.name}
-                  className="brightness-0 invert"
+                  style={{ width: "auto", height: "28px" }}
+                  className="h-7 sm:h-8 w-auto max-w-[140px] object-contain brightness-0 invert"
                 />
               </Link>
               <button

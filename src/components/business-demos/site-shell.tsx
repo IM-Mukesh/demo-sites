@@ -29,7 +29,14 @@ function Footer({ business }: { business: BusinessConfig }) {
       <div className="container footer__top">
         <div className="footer__brand">
           <Link href={siteHref(business)} aria-label={`${business.branding.name} home`}>
-            <Image src="/brand/architect-wordmark.svg" width={180} height={40} alt={business.branding.name} />
+            <Image
+              src="/brand/architect-wordmark.svg"
+              width={160}
+              height={40}
+              alt={business.branding.name}
+              style={{ width: "auto", height: "36px" }}
+              className="h-9 w-auto max-w-[160px] object-contain"
+            />
           </Link>
           <p>Thoughtful spaces, material clarity and a provisional digital home for a Sector 57 design conversation.</p>
         </div>

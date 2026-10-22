@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -398,10 +399,13 @@ export function MaterialPaletteExplorer() {
               className="bg-[#1B1D19] border border-white/10 rounded-2xl overflow-hidden shadow-2xl"
             >
               <div className="relative h-64 sm:h-80 w-full overflow-hidden">
-                <img
+                <Image
                   src={activeMaterial.image}
                   alt={activeMaterial.name}
-                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  fill
+                  unoptimized
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1B1D19] via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-4 left-6 right-6">
@@ -534,10 +538,13 @@ export function StudioLocationCard({ business }: { business: BusinessConfig }) {
 
             <div className="mt-5 space-y-4">
               <div className="relative h-44 rounded-xl overflow-hidden border border-white/10">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
                   alt="Sector 57 Architectural Practice Studio"
-                  className="w-full h-full object-cover"
+                  fill
+                  unoptimized
+                  sizes="(max-width: 640px) 100vw, 40vw"
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                 <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between">
@@ -586,33 +593,43 @@ export function StudioQuickBar({ business }: { business: BusinessConfig }) {
   const mapUrl = getMapsUrl(business.location);
 
   return (
-    <div className="fixed bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-40 w-[min(94%,680px)]">
+    <div
+      className="fixed left-0 right-0 z-40 pointer-events-none flex justify-center px-3 sm:px-4"
+      style={{
+        bottom: "max(12px, env(safe-area-inset-bottom, 12px))",
+      }}
+    >
       <motion.div
-        initial={{ y: 80, opacity: 0 }}
+        initial={{ y: 70, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="flex items-center justify-between gap-3 px-4 sm:px-6 py-3 rounded-full bg-[#121311]/90 backdrop-blur-xl border border-white/20 shadow-2xl text-white"
+        transition={{ delay: 0.4, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        className="pointer-events-auto flex items-center justify-between gap-2 sm:gap-4 px-3 sm:px-5 py-2 sm:py-2.5 rounded-full bg-[#111210]/95 backdrop-blur-xl border border-white/20 shadow-2xl text-white w-full max-w-[540px]"
       >
-        <div className="flex items-center gap-3">
-          <span className="relative flex h-2.5 w-2.5">
+        <div className="flex items-center gap-2 sm:gap-2.5 pl-1 min-w-0">
+          <span className="relative flex h-2 w-2 flex-shrink-0">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
           </span>
-          <div className="hidden sm:block">
-            <span className="text-xs font-serif font-medium text-white block">ARCHITECT · Sector 57</span>
-            <span className="text-[10px] text-stone-400 block tracking-wider uppercase">Architecture & Façade Studio</span>
+          <div className="truncate">
+            <span className="text-xs font-serif font-medium text-white block truncate leading-tight">
+              ARCHITECT
+            </span>
+            <span className="text-[10px] text-stone-400 block tracking-wider uppercase truncate leading-tight">
+              Sector 57 Studio
+            </span>
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
           {callUrl && (
             <a
               href={callUrl}
-              className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-semibold tracking-wider uppercase transition-colors"
-              title="Call Studio"
+              className="h-10 w-10 sm:h-10 sm:w-auto sm:px-3.5 rounded-full bg-white/10 hover:bg-white/20 active:scale-95 text-white flex items-center justify-center gap-1.5 transition-all border border-white/10"
+              title="Call Studio (+91 94669 40493)"
+              aria-label="Call studio"
             >
-              <Phone size={13} className="text-[#C5A880]" />
-              <span className="hidden md:inline">Call</span>
+              <Phone size={14} className="text-[#C5A880]" />
+              <span className="hidden sm:inline text-xs font-semibold uppercase tracking-wider">Call</span>
             </a>
           )}
 
@@ -621,10 +638,10 @@ export function StudioQuickBar({ business }: { business: BusinessConfig }) {
               href={whatsappUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 px-3.5 sm:px-5 py-2 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold tracking-wider uppercase transition-all shadow-md"
+              className="h-10 px-3.5 sm:px-4.5 rounded-full bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white text-xs font-bold tracking-wider uppercase flex items-center gap-1.5 transition-all shadow-md shadow-emerald-950/40"
               title="WhatsApp Consultation"
             >
-              <MessageCircle size={14} />
+              <MessageCircle size={15} />
               <span>WhatsApp</span>
             </a>
           )}
@@ -634,11 +651,12 @@ export function StudioQuickBar({ business }: { business: BusinessConfig }) {
               href={mapUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-2 rounded-full bg-white/5 hover:bg-white/15 text-stone-300 text-xs font-medium transition-colors"
+              className="h-10 w-10 sm:h-10 sm:w-auto sm:px-3 rounded-full bg-white/5 hover:bg-white/15 active:scale-95 text-stone-300 hover:text-white flex items-center justify-center gap-1.5 transition-all border border-white/5"
               title="View on Google Maps"
+              aria-label="Get directions"
             >
               <MapPin size={14} className="text-[#C5A880]" />
-              <span className="hidden lg:inline">Directions</span>
+              <span className="hidden md:inline text-xs font-medium">Maps</span>
             </a>
           )}
         </div>
