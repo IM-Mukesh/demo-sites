@@ -22,6 +22,7 @@ export function SiteImage({
   sizes?: string;
   priority?: boolean;
 }) {
+  const isRemote = src.startsWith("http://") || src.startsWith("https://");
   return (
     <Image
       src={src}
@@ -29,6 +30,7 @@ export function SiteImage({
       fill
       priority={priority}
       sizes={sizes}
+      unoptimized={isRemote}
       className={className}
     />
   );

@@ -96,6 +96,9 @@ export function getMapsUrl(
   location: LocationDetails | PublicAddress | string,
 ): string | null {
   const query = locationQuery(location);
+  if (query.startsWith("http://") || query.startsWith("https://")) {
+    return query;
+  }
   return query.length === 0
     ? null
     : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;

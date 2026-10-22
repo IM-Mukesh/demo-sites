@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { MessageCircle, Phone, CheckCircle2, ArrowRight } from "lucide-react";
 import { contactFormSchema, type ContactFormValues } from "../../lib/contact-schema";
+import { getWhatsAppUrl, getCallUrl } from "../../lib/site-utils";
 
 const initialValues: ContactFormValues = {
   fullName: "",
@@ -42,70 +44,186 @@ export function ContactForm() {
       return;
     }
 
-    // Demo mode intentionally stops here: no personal data is sent or logged.
     setErrors({});
     setStatus("success");
   };
 
+  const studioPhone = "+91 94669 40493";
+  const whatsappBriefText = `Hello ARCHITECT Studio (Sector 57, Gurugram). I am submitting a project enquiry:
+• Name: ${values.fullName || "Prospective Client"}
+• Phone: ${values.phone || "Not specified"}
+• Project Type: ${values.projectType || "General Architectural Consultation"}
+• Location: ${values.projectLocation || "Sector 57 / Gurugram"}
+• Budget Range: ${values.budget || "To Discuss"}
+• Details: ${values.description || "Looking to discuss spatial planning and design direction."}
+(Baseline ₹10,000 Discovery Session)`;
+
+  const whatsappUrl = getWhatsAppUrl(studioPhone, whatsappBriefText);
+  const callUrl = getCallUrl(studioPhone);
+
   return (
     <form className="contact-form" onSubmit={submit} noValidate>
-      <div className="concept-strip" style={{ marginBottom: 28 }}>
-        <p className="concept-note" style={{ margin: 0 }}>
-          <span>This is a demo form. It validates your enquiry locally but does not send or store personal details until a delivery service is configured.</span>
+      <div className="concept-strip mb-6 bg-stone-900/40 border border-white/10 p-4 rounded-xl">
+        <p className="concept-note text-xs text-stone-300 m-0 leading-relaxed">
+          <span>
+            <strong>Sector 57 Studio Consultation:</strong> Initial discovery briefings carry a baseline ₹10,000 allocation. Submit your brief below to preview, or connect instantly with our team via WhatsApp.
+          </span>
         </p>
       </div>
+
       <div className="form-grid">
         <div className="form-field">
           <label htmlFor="fullName">Full name</label>
-          <input id="fullName" name="fullName" autoComplete="name" value={values.fullName} onChange={(event) => update("fullName", event.target.value)} />
+          <input
+            id="fullName"
+            name="fullName"
+            autoComplete="name"
+            placeholder="e.g. Vikramaditya Sharma"
+            value={values.fullName}
+            onChange={(event) => update("fullName", event.target.value)}
+          />
           {errors.fullName ? <span className="form-error">{errors.fullName}</span> : null}
         </div>
+
         <div className="form-field">
           <label htmlFor="phone">Phone number</label>
-          <input id="phone" name="phone" type="tel" autoComplete="tel" value={values.phone} onChange={(event) => update("phone", event.target.value)} />
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            autoComplete="tel"
+            placeholder="+91 98765 43210"
+            value={values.phone}
+            onChange={(event) => update("phone", event.target.value)}
+          />
           {errors.phone ? <span className="form-error">{errors.phone}</span> : null}
         </div>
+
         <div className="form-field">
-          <label htmlFor="email">Email address <span>(optional)</span></label>
-          <input id="email" name="email" type="email" autoComplete="email" value={values.email} onChange={(event) => update("email", event.target.value)} />
+          <label htmlFor="email">
+            Email address <span>(optional)</span>
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autoComplete="email"
+            placeholder="contact@domain.com"
+            value={values.email}
+            onChange={(event) => update("email", event.target.value)}
+          />
           {errors.email ? <span className="form-error">{errors.email}</span> : null}
         </div>
+
         <div className="form-field">
           <label htmlFor="projectType">Project type</label>
-          <select id="projectType" name="projectType" value={values.projectType} onChange={(event) => update("projectType", event.target.value)}>
+          <select
+            id="projectType"
+            name="projectType"
+            value={values.projectType}
+            onChange={(event) => update("projectType", event.target.value)}
+          >
             <option value="">Choose one</option>
-            <option value="residential">Residential</option>
-            <option value="commercial">Commercial</option>
-            <option value="interior">Interior / spatial planning</option>
-            <option value="glass-facade">Glass / façade question</option>
-            <option value="visualization">Visualization / concept study</option>
-            <option value="other">Something else</option>
+            <option value="residential">Luxury Residential Villa</option>
+            <option value="commercial">Commercial / Workplace</option>
+            <option value="interior">Interior / Spatial Planning</option>
+            <option value="glass-facade">Structural Glass & Façade</option>
+            <option value="visualization">Visualization / Massing Study</option>
+            <option value="other">Bespoke Scope</option>
           </select>
           {errors.projectType ? <span className="form-error">{errors.projectType}</span> : null}
         </div>
+
         <div className="form-field form-field--full">
           <label htmlFor="projectLocation">Project location</label>
-          <input id="projectLocation" name="projectLocation" autoComplete="street-address" placeholder="City, neighbourhood or site context" value={values.projectLocation} onChange={(event) => update("projectLocation", event.target.value)} />
+          <input
+            id="projectLocation"
+            name="projectLocation"
+            autoComplete="street-address"
+            placeholder="e.g. Sector 57, Golf Course Extension, DLF Phase 1, Gurugram"
+            value={values.projectLocation}
+            onChange={(event) => update("projectLocation", event.target.value)}
+          />
           {errors.projectLocation ? <span className="form-error">{errors.projectLocation}</span> : null}
         </div>
+
         <div className="form-field form-field--full">
-          <label htmlFor="budget">Approximate budget range <span>(optional)</span></label>
-          <input id="budget" name="budget" placeholder="A range is enough, if known" value={values.budget} onChange={(event) => update("budget", event.target.value)} />
+          <label htmlFor="budget">
+            Approximate budget range <span>(optional)</span>
+          </label>
+          <input
+            id="budget"
+            name="budget"
+            placeholder="e.g. ₹50L - ₹1.5 Cr / To be assessed in discovery"
+            value={values.budget}
+            onChange={(event) => update("budget", event.target.value)}
+          />
         </div>
+
         <div className="form-field form-field--full">
-          <label htmlFor="description">Tell us about the project</label>
-          <textarea id="description" name="description" placeholder="What are you hoping to change, make or understand?" value={values.description} onChange={(event) => update("description", event.target.value)} />
+          <label htmlFor="description">Tell us about your spatial vision</label>
+          <textarea
+            id="description"
+            name="description"
+            rows={4}
+            placeholder="Describe your site, plot dimensions, daylight requirements, or architectural priorities..."
+            value={values.description}
+            onChange={(event) => update("description", event.target.value)}
+          />
           {errors.description ? <span className="form-error">{errors.description}</span> : null}
         </div>
+
         <label className="form-checkbox" htmlFor="consent">
-          <input id="consent" name="consent" type="checkbox" checked={values.consent} onChange={(event) => update("consent", event.target.checked)} />
-          <span>I consent to these details being used to respond to this enquiry. I understand this demonstration does not currently transmit the form.</span>
+          <input
+            id="consent"
+            name="consent"
+            type="checkbox"
+            checked={values.consent}
+            onChange={(event) => update("consent", event.target.checked)}
+          />
+          <span>
+            I consent to these details being used by ARCHITECT - Sector 57 to assess this project enquiry.
+          </span>
         </label>
         {errors.consent ? <span className="form-error">{errors.consent}</span> : null}
       </div>
-      <div className="form-footer">
-        <button className="button" type="submit">Preview enquiry</button>
-        {status === "success" ? <p className="form-status" role="status">Your enquiry is valid for the demo. No message was sent.</p> : <p className="muted" style={{ margin: 0, fontSize: "0.78rem" }}>Fields marked optional can be left blank.</p>}
+
+      <div className="form-footer mt-6 pt-4 border-t border-stone-800">
+        <div className="flex flex-wrap items-center gap-3">
+          <button className="button" type="submit">
+            Validate Brief
+          </button>
+          {whatsappUrl && (
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="button bg-emerald-700 hover:bg-emerald-600 text-white border-transparent inline-flex items-center gap-2"
+            >
+              <MessageCircle size={15} /> WhatsApp Studio Directly
+            </a>
+          )}
+          {callUrl && (
+            <a
+              href={callUrl}
+              className="button button--outline inline-flex items-center gap-2"
+            >
+              <Phone size={14} /> Call {studioPhone}
+            </a>
+          )}
+        </div>
+
+        {status === "success" && (
+          <div className="mt-4 p-4 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-300">
+            <div className="flex items-center gap-2 font-medium">
+              <CheckCircle2 size={18} className="text-emerald-400" />
+              <span>Enquiry Brief Validated</span>
+            </div>
+            <p className="text-xs text-emerald-200/80 mt-1">
+              Your details are structured and ready. Click &ldquo;WhatsApp Studio Directly&rdquo; to send this enquiry straight to our Sector 57 architectural lead!
+            </p>
+          </div>
+        )}
       </div>
     </form>
   );

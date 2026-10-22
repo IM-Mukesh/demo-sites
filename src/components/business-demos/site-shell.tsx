@@ -5,6 +5,7 @@ import type { BusinessConfig } from "../../types/business";
 import { getCallUrl, getMapsUrl, getWhatsAppUrl } from "../../lib/site-utils";
 import { Navigation } from "./navigation";
 import { siteHref } from "./shared";
+import { StudioQuickBar } from "./interactive-studio";
 
 export function SiteShell({ business, children }: { business: BusinessConfig; children: ReactNode }) {
   return (
@@ -12,6 +13,7 @@ export function SiteShell({ business, children }: { business: BusinessConfig; ch
       <Navigation business={business} />
       <main className="site-main">{children}</main>
       <Footer business={business} />
+      <StudioQuickBar business={business} />
     </>
   );
 }

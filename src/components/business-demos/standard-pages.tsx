@@ -6,6 +6,7 @@ import { FAQAccordion } from "./faq-accordion";
 import { ProjectFilter } from "./project-filter";
 import { Reveal } from "./reveal";
 import { Breadcrumbs, CallToAction, ConceptNote, ContactActions, Eyebrow, SectionHeading, ServiceCard, SiteImage, siteHref } from "./shared";
+import { StudioLocationCard } from "./interactive-studio";
 
 export function AboutPage({ business }: { business: BusinessConfig }) {
   return (
@@ -25,7 +26,7 @@ export function AboutPage({ business }: { business: BusinessConfig }) {
         <div className="container">
           <Reveal>
             <div className="image-frame" style={{ aspectRatio: "1.6 / .72" }}>
-              <SiteImage src="/images/architect/cedar-ridge-retreat.svg" alt="Illustrative architecture framed by cedar, stone and a quiet landscape" sizes="(max-width: 640px) 100vw, 92vw" />
+              <SiteImage src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=85" alt="Contemporary luxury architectural villa with warm illumination" sizes="(max-width: 640px) 100vw, 92vw" />
             </div>
           </Reveal>
         </div>
@@ -72,7 +73,7 @@ export function ServicesPage({ business }: { business: BusinessConfig }) {
       <section className="section section--tight">
         <div className="container split-feature">
           <div className="split-feature__copy" style={{ background: "var(--ink)", color: "var(--paper)" }}><Eyebrow>Typical considerations</Eyebrow><h2 className="display display-sm" style={{ color: "var(--paper)", marginTop: 18 }}>The useful questions arrive before the polished answer.</h2><p style={{ color: "rgba(245,243,237,.72)" }}>A first enquiry can make room for the real conditions of a project: site, use, light, privacy, material, budget and the decisions that still need to be made.</p><ul className="principle-list" style={{ color: "var(--paper)" }}>{["Site and orientation", "Daily routines", "Privacy and openness", "Material expectations", "Existing constraints", "Next-step clarity"].map((item) => <li key={item} style={{ borderColor: "rgba(245,243,237,.25)" }}>{item}</li>)}</ul></div>
-          <div className="image-frame split-feature__image"><SiteImage src="/images/architect/limestone-cantilever.svg" alt="Illustrative stone architecture with a deep overhang and planted edge" sizes="(max-width: 640px) 100vw, 50vw" /></div>
+          <div className="image-frame split-feature__image"><SiteImage src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85" alt="Floor-to-ceiling glass pavilion architecture" sizes="(max-width: 640px) 100vw, 50vw" /></div>
         </div>
       </section>
       <CallToAction business={business} />
@@ -123,8 +124,44 @@ export function FAQPage({ business }: { business: BusinessConfig }) {
 export function ContactPage({ business }: { business: BusinessConfig }) {
   return (
     <>
-      <section className="page-hero"><div className="container page-hero__grid"><div className="page-hero__copy"><Breadcrumbs business={business} items={[{ label: "Contact" }]} /><Eyebrow>Start with the question</Eyebrow><h1 className="display display-lg" style={{ marginTop: 19 }}>Tell us a little about the space you have in mind.</h1><p>A focused first message can include the project type, location, what you would like to change and the questions that are still open.</p></div><div className="page-hero__meta"><strong>Demo contact</strong>Publicly listed phone and location shown below. No email or office hours are claimed.</div></div></section>
-      <section className="section" style={{ paddingTop: 35 }}><div className="container contact-grid"><div className="contact-panel"><Eyebrow>Find the right starting point</Eyebrow><h2>Let the brief begin simply.</h2><p>You can call, open WhatsApp, ask for directions or preview an enquiry using the form. In this concept, no form submission is transmitted.</p><ContactActions business={business} /><ul className="contact-details"><li><span>Phone</span><a href="tel:+919466940493">+91 94669 40493</a></li><li><span>Address</span>{business.contact.address.formatted}</li><li><span>Project note</span>Residential, commercial, interior and glass-related questions can be selected in the draft form.</li></ul></div><ContactForm /></div></section>
+      <section className="page-hero">
+        <div className="container page-hero__grid">
+          <div className="page-hero__copy">
+            <Breadcrumbs business={business} items={[{ label: "Contact" }]} />
+            <Eyebrow>Start with the question</Eyebrow>
+            <h1 className="display display-lg" style={{ marginTop: 19 }}>Tell us a little about the space you have in mind.</h1>
+            <p>A focused first message can include the project type, location, what you would like to change and the questions that are still open.</p>
+          </div>
+          <div className="page-hero__meta">
+            <strong>Studio consultation</strong>
+            Baseline ₹10,000 Discovery Session.<br />
+            Sector 57, Gurugram.
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{ paddingTop: 35 }}>
+        <div className="container contact-grid">
+          <div className="contact-panel">
+            <Eyebrow>Find the right starting point</Eyebrow>
+            <h2>Let the brief begin simply.</h2>
+            <p>You can call, open WhatsApp, ask for directions or preview an enquiry using the form. Discovery sessions start with an initial ₹10,000 baseline.</p>
+            <ContactActions business={business} />
+            <ul className="contact-details">
+              <li><span>Direct Phone</span><a href="tel:+919466940493">+91 94669 40493</a></li>
+              <li><span>Studio Address</span>{business.contact.address.formatted}</li>
+              <li><span>Specialties</span>Luxury villas, structural glass facades, interior spatial design & Gurugram municipal sanctions.</li>
+            </ul>
+          </div>
+          <ContactForm />
+        </div>
+      </section>
+
+      <section className="section bg-[#121311] text-white" style={{ paddingTop: 60, paddingBottom: 60 }}>
+        <div className="container">
+          <StudioLocationCard business={business} />
+        </div>
+      </section>
     </>
   );
 }

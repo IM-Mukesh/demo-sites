@@ -1,18 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --ink: #20211e;
-  --ink-soft: #343630;
-  --paper: #f5f3ed;
-  --paper-deep: #ece8de;
+  --ink: #111210;
+  --ink-soft: #222320;
+  --paper: #f7f5ef;
+  --paper-deep: #eae6dc;
   --white: #ffffff;
-  --stone: #d8d3c8;
-  --taupe: #a79b87;
-  --olive: #78816d;
-  --line: rgba(32, 33, 30, 0.17);
-  --shadow: 0 24px 80px rgba(32, 33, 30, 0.12);
+  --stone: #d4cfc4;
+  --taupe: #9e8963;
+  --olive: #7c705a;
+  --bronze: #c5a880;
+  --line: rgba(17, 18, 16, 0.12);
+  --shadow: 0 24px 80px rgba(17, 18, 16, 0.12);
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Space Grotesk", ui-monospace, monospace;
 }
 
 * {
@@ -28,7 +34,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
@@ -220,14 +226,14 @@ textarea:focus-visible {
   gap: 18px;
   border-bottom: 1px solid var(--line);
   padding: 18px 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 2rem;
   letter-spacing: -0.04em;
 }
 
 .mobile-navigation__links a:not(.button) span {
   color: var(--olive);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.67rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -250,7 +256,7 @@ textarea:focus-visible {
 .display {
   margin: 0;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-weight: 400;
   letter-spacing: -0.055em;
   line-height: 0.98;
@@ -637,7 +643,7 @@ textarea:focus-visible {
 
 .service-card h3 {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: clamp(1.45rem, 2.2vw, 2.1rem);
   font-weight: 400;
   letter-spacing: -0.035em;
@@ -716,7 +722,7 @@ textarea:focus-visible {
 
 .project-card h3 {
   margin: 8px 0 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: clamp(1.6rem, 2.6vw, 2.65rem);
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -768,7 +774,7 @@ textarea:focus-visible {
 .principle-list li {
   border-top: 1px solid rgba(32, 33, 30, 0.22);
   padding: 12px 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 1.1rem;
 }
 
@@ -793,7 +799,7 @@ textarea:focus-visible {
 
 .principle-page-item h3 {
   margin: 31px 0 13px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 1.55rem;
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -828,7 +834,7 @@ textarea:focus-visible {
   min-height: 50px;
   margin: 32px 0 12px;
   color: var(--paper);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 1.42rem;
   font-weight: 400;
   letter-spacing: -0.03em;
@@ -1067,7 +1073,7 @@ textarea:focus-visible {
 
 .article-card h2 {
   margin: 13px 0 12px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: clamp(1.5rem, 2.3vw, 2.15rem);
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -1093,7 +1099,7 @@ textarea:focus-visible {
   border-bottom: 1px solid var(--line);
   padding-bottom: 32px;
   color: var(--ink) !important;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: clamp(1.45rem, 2.6vw, 2.25rem) !important;
   letter-spacing: -0.035em;
   line-height: 1.18 !important;
@@ -1137,7 +1143,7 @@ textarea:focus-visible {
 
 .detail-content h2 {
   margin: 58px 0 16px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: clamp(1.9rem, 3.2vw, 3.1rem);
   font-weight: 400;
   letter-spacing: -0.045em;
@@ -1221,7 +1227,7 @@ textarea:focus-visible {
   background: transparent;
   color: var(--ink);
   cursor: pointer;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: clamp(1.2rem, 2.3vw, 1.7rem);
   line-height: 1.15;
   text-align: left;
@@ -1257,7 +1263,7 @@ textarea:focus-visible {
 
 .contact-panel h2 {
   margin: 19px 0 20px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: clamp(2rem, 3.4vw, 3.4rem);
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -1401,7 +1407,7 @@ textarea:focus-visible {
 
 .legal-copy h2 {
   margin: 53px 0 15px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -1688,6 +1694,52 @@ textarea:focus-visible {
   .form-footer .button {
     width: 100%;
   }
+}
+
+/* Studio Sector 57 Luxury Architectural Extensions */
+.studio-top-ticker {
+  font-family: var(--font-sans);
+  letter-spacing: 0.03em;
+}
+
+.scope-builder {
+  font-family: var(--font-sans);
+}
+
+.scope-builder h3,
+.scope-builder h4,
+.material-explorer h3,
+.material-explorer h4,
+.studio-card h3,
+.studio-card h4 {
+  font-family: var(--font-serif);
+}
+
+.filter-button.is-active {
+  background: var(--ink);
+  color: var(--white);
+  border-color: var(--ink);
+}
+
+.project-card {
+  transition: transform 350ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card {
+  transition: transform 350ms cubic-bezier(0.22, 1, 0.36, 1), border-color 300ms ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-top-color: var(--bronze);
+}
+
+.footer {
+  padding-bottom: 110px;
 }
 
 @media (prefers-reduced-motion: reduce) {
