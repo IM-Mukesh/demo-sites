@@ -216,7 +216,7 @@ export function HomePage({ business }: { business: BusinessConfig }) {
 
           <div className="project-grid mt-12">
             {business.projects.slice(0, 4).map((project, index) => (
-              <Reveal key={project.id} className="project-card-motion" delay={Math.min(index * 0.07, 0.25)}>
+              <Reveal key={project.id} className="project-card-motion" delay={index * 0.06}>
                 <ProjectCard business={business} project={project} />
               </Reveal>
             ))}
